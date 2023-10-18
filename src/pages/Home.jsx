@@ -1,9 +1,14 @@
+
+import Features from './page-sections/Features';
+import Hero from './page-sections/Hero';
+
 const Home = () => {
-  return (
-    <div>
-      <h1 className='font-bold'>Home</h1>
-    </div>
-  );
-}
+	return (
+		<div className='bg-[#FAFAFA] dark:bg-[#141416] h-auto px-14 py-7 text-black dark:text-white'>
+			<Hero />
+			<Features />
+		</div>
+	);
+};
 
 export default Home;

@@ -13,11 +13,13 @@ export const FeaturesCard = () => {
 							alt={`Image ${item.id}`}
 						/>
 					</div>
+					
 					<div className='mb-3'>
 						<h4 className='text-sm font-semibold'>{item.header}</h4>
 					</div>
+
 					<div className='mb-3'>
-						<p className='text-xs'>
+						<p className='text-sm'>
 							{item.details}
 						</p>
 					</div>

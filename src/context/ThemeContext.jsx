@@ -3,9 +3,6 @@ import PropTypes from 'prop-types'; // Import PropTypes
 
 const ThemeContext = createContext();
 
-export function useTheme() {
-	return useContext(ThemeContext);
-}
 
 export function ThemeProvider({ children }) {
 	const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -38,6 +35,10 @@ export function ThemeProvider({ children }) {
 			{children}
 		</ThemeContext.Provider>
 	);
+}
+
+export function useTheme() {
+	return useContext(ThemeContext);
 }
 
 // Add PropTypes validation for the children prop

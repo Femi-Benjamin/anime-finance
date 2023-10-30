@@ -25,10 +25,10 @@ const HeroContent = () => {
   };
 
   return (
-    <div className="mt-8 md:flex items-center md:justify-between">
+    <div className="items-center mt-8 md:flex md:justify-between 2xl:px-32">
       <div className="max-w-[630px]">
         <div className="mb-8">
-          <h1 className="lg:text-7xl md:text-5xl text-3xl font-bold md:text-left text-center">
+          <h1 className="text-3xl font-bold text-center lg:text-7xl md:text-5xl md:text-left">
             Unlock the future of digital{" "}
             <span className="text-[#F0B90B]">wealth</span>
           </h1>
@@ -42,7 +42,7 @@ const HeroContent = () => {
         </div>
 
         <div>
-          <div className="md:block hidden">
+          <div className="hidden md:block">
             <CustomButton
               width="158px"
               content="start mining now"
@@ -50,7 +50,7 @@ const HeroContent = () => {
             />
           </div>
 
-          <div className="md:hidden bloc flex justify-center">
+          <div className="flex justify-center md:hidden bloc">
             <CustomButton
               width="335px"
               content="start mining now"

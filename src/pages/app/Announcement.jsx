@@ -1,4 +1,3 @@
-// import React from 'react'
 import { useTheme } from "../../context/ThemeContext";
 import Profilephoto from "../../assets/images/profilephoto.svg";
 import animelogo from "../../assets/images/anime-logo.svg";
@@ -30,6 +29,7 @@ const Announcement = () => {
                 <div className="flex justify-end">
                     <Time />
                 </div>
+                <h1>Announcements</h1>
             </div>
             <Nav1 />
         </div>

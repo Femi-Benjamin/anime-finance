@@ -1,6 +1,7 @@
 import { CustomButton } from "../../components/button";
 import { useTheme } from "../../context/ThemeContext";
 import animelogo from "../../assets/images/anime-logo.svg";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -95,23 +96,27 @@ const Register = () => {
                 />
               </div>
 
-              <div className="md:block hidden">
-                <CustomButton
-                  id="submit"
-                  type="submit"
-                  width="400px"
-                  content="Create Account"
-                />
-              </div>
+              <Link to="/dashboard">
+                <div className="md:block hidden">
+                  <CustomButton
+                    id="submit"
+                    type="submit"
+                    width="400px"
+                    content="Create Account"
+                  />
+                </div>
+              </Link>
 
-              <div className="md:hidden block">
-                <CustomButton
-                  id="submit"
-                  type="submit"
-                  width="315px"
-                  content="Create Account"
-                />
-              </div>
+              <Link to="/dashboard">
+                <div className="md:hidden block">
+                  <CustomButton
+                    id="submit"
+                    type="submit"
+                    width="315px"
+                    content="Create Account"
+                  />
+                </div>
+              </Link>
 
               <div className="text-center p-5">
                 <h1>

@@ -24,9 +24,8 @@ function Navbar() {
           <div className="cursor-pointer flex justify-between">
             <img src={logo} alt="" />
             <img
-              className={`block md:hidden ${
-                isDarkMode ? "white-Menu-icon" : ""
-              }`}
+              className={`block md:hidden ${isDarkMode ? "white-Menu-icon" : ""
+                }`}
               src={Menu}
               alt=""
             />
@@ -70,12 +69,13 @@ function Navbar() {
               {isDarkMode ? "🌕" : "🌑"}
             </button>
           </div>
+
           <div className="hidden md:block">
-            <CustomButton
-              width="158px"
-              content="Log In"
+            <div
               onClick={handleloginClick}
-            />
+              className="w-[158px] border dark:border-white border-black p-2 rounded-md text-center cursor-pointer">
+              <button className="dark:text-[#FFE749] text-black">Log In</button>
+            </div>
           </div>
 
           <div className="hidden md:block">

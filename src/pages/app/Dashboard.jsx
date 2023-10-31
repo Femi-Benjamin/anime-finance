@@ -11,7 +11,7 @@ import MineButton from "../../components/MineButton";
 const Dashboard = () => {
   const { isDarkMode, toggleTheme } = useTheme();
   return (
-    <div className="bg-[#FAFAFA] dark:bg-[#141416] text-black dark:text-white">
+    <div className="bg-[#FAFAFA] dark:bg-[#141416] h-scre text-black dark:text-white">
       <div className="flex justify-between p-5 border-b">
         <img src={animelogo} alt="" />
         <div className="flex gap-7">
@@ -30,14 +30,12 @@ const Dashboard = () => {
         <div className="flex justify-end">
           <Time />
         </div>
-        <div className="py-[269px]">
+        <div className="py-[147.5px]">
           <div className="flex justify-center gap-[35px] items-center">
             {/* ACTIVE MEMBERS */}
             <Active />
-
             {/* WEEKLY TASK*/}
             <Weekly />
-
             {/* MINE BUTTON */}
             <MineButton />
           </div>

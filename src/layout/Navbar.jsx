@@ -12,7 +12,6 @@ function Navbar() {
 
   const handleregisterClick = () => {
     navigate("/register");
-
   };
   const handleloginClick = () => {
     navigate("/Login");
@@ -74,15 +73,16 @@ function Navbar() {
           <div className="md:block hidden">
             <CustomButton
               width="158px"
-              content="Get started"
-              onClick={handleregisterClick}
+              content="Log In"
+              onClick={handleloginClick}
             />
           </div>
+
           <div className="md:block hidden">
             <CustomButton
               width="158px"
-              content="Log In"
-              onClick={handleloginClick}
+              content="Get started"
+              onClick={handleregisterClick}
             />
           </div>
         </div>

@@ -70,7 +70,7 @@ function Navbar() {
               {isDarkMode ? "🌕" : "🌑"}
             </button>
           </div>
-          <div className="md:block hidden">
+          <div className="hidden md:block">
             <CustomButton
               width="158px"
               content="Log In"
@@ -78,7 +78,7 @@ function Navbar() {
             />
           </div>
 
-          <div className="md:block hidden">
+          <div className="hidden md:block">
             <CustomButton
               width="158px"
               content="Get started"

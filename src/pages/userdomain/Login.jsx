@@ -63,19 +63,18 @@ const Login = () => {
                 />
               </div>
 
-              {/* ///// */}
-              <div className="pb-10">
-                <h1 className="pb-2">Password</h1>
-                <div className="flex justify-between items-center border border-[#61616B] rounded-lg">
-                  <div>
-                    <input
-                      className="h-14 bg-transparent outline-none p-2 w-80"
-                      type={passwordVisible ? "text" : "password"}
-                      id="password"
-                      placeholder="Input password"
-                      onChange={handlePasswordChange} // Add an onChange event handler
-                    />
-                  </div>
+							<div className='pb-10'>
+								<h1 className='pb-2'>Password</h1>
+								<div className='flex justify-between items-center border border-[#61616B] rounded-lg'>
+									<div>
+										<input
+											className='p-2 bg-transparent outline-none h-14'
+											type={passwordVisible ? 'text' : 'password'}
+											id='password'
+											placeholder='Input password'
+											onChange={handlePasswordChange} // Add an onChange event handler
+										/>
+									</div>
 
                   <div className="p-2">
                     <img
@@ -97,39 +96,45 @@ const Login = () => {
                 )}
               </div>
 
-              <div className="md:block hidden">
+              {/* <div className="md:block hidden">
                 <CustomButton
                   id="submit"
                   type="submit"
                   width="400px"
                   content="Sign In"
                 />
-              </div>
+              </div> */}
 
-              <div className="md:hidden block">
-                <CustomButton
-                  id="submit"
-                  type="submit"
-                  width="315px"
-                  content="Sign In"
-                />
-              </div>
+							<div className='hidden md:block'>
+								<CustomButton
+									id='submit'
+									type="submit"
+									width='400px'
+									content='Sign In'
+								/>
+							</div>
 
-              <div className="text-center p-5">
-                <h1>
-                  Don’t have an account?
-                  <span className="text-[#e0cc44] cursor-pointer">
-                    {" "}
-                    Sign Up
-                  </span>
-                </h1>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+							<div className='block md:hidden'>
+								<CustomButton
+									id='submit'
+									type="submit"
+									width='315px'
+									content='Sign In'
+								/>
+							</div>
+
+							<div className='p-5 text-center'>
+								<h1>Don’t have an account?
+									<span className='text-[#e0cc44] cursor-pointer'> Sign Up</span></h1>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	);
 };
 
 export default Login;

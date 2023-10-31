@@ -1,4 +1,3 @@
-// import React from 'react'
 import Minebuton from "../assets/images/Minebuton.svg";
 
 const MineButton = () => {

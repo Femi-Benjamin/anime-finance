@@ -1,4 +1,3 @@
-// import React from 'react'
 import Profilephoto from "../assets/images/profilephoto.svg";
 
 const Active = () => {

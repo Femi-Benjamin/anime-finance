@@ -22,13 +22,15 @@ function Navbar() {
       <div className="md:flex justify-between items-center">
         <div className="md:flex items-center gap-3">
           <div className="cursor-pointer flex justify-between">
-            <img src={logo} alt="" />
-            <img
-              className={`block md:hidden ${isDarkMode ? "white-Menu-icon" : ""
-                }`}
-              src={Menu}
-              alt=""
-            />
+            <Link to="/home">
+              <img src={logo} alt="" />
+            </Link>
+              <img
+                className={`block md:hidden ${isDarkMode ? "white-Menu-icon" : ""
+                  }`}
+                src={Menu}
+                alt=""
+              />
           </div>
 
           <div className="md:block hidden">

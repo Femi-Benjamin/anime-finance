@@ -12,7 +12,9 @@ const Register = () => {
   return (
     <div className="bg-[#FAFAFA] dark:bg-[#141416]  px- text-black dark:text-white">
       <div className="flex justify-between p-5 border-b">
-        <img src={animelogo} alt="" />
+        <Link to="/">
+          <img src={animelogo} alt="" />
+        </Link>
         <button
           className="text-black dark:text-white text-sm px-2.5 py-2.5 md:rounded rounded-3xl bg-[#EBEBEBEE] focus:outline-none"
           onClick={toggleTheme}
@@ -121,13 +123,15 @@ const Register = () => {
               <div className="text-center p-5">
                 <h1>
                   Already have an Account?
-                  <span
-                    onClick={handleloginClick}
-                    className="text-[#e0cc44] cursor-pointer"
-                  >
-                    {" "}
-                    Sign In
-                  </span>
+                  <Link to="/login">
+                    <span
+                      onClick={handleloginClick}
+                      className="text-[#e0cc44] cursor-pointer"
+                    >
+                      {" "}
+                      Sign In
+                    </span>
+                  </Link>
                 </h1>
               </div>
             </form>

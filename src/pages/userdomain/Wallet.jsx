@@ -2,14 +2,14 @@ import { useTheme } from "../../context/ThemeContext";
 import { Link } from "react-router-dom";
 import Profilephoto from "../../assets/images/profilephoto.svg";
 import animelogo from "../../assets/images/anime-logo.svg";
-import MineButton from "../../components/MineButton";
 import Group from "../../assets/images/group.svg";
-import Active from "../../components/active";
-import Weekly from "../../components/Weekly";
 import Time from "../../components/Time";
 import Nav1 from "../../components/Nav1";
+import { Collector } from "../../components/Collector";
+import Weekly from "../../components/Weekly";
+import MineButton from "../../components/MineButton";
 
-const Dashboard = () => {
+const Wallet = () => {
   const { isDarkMode, toggleTheme } = useTheme();
   return (
     <div className="bg-[#FAFAFA] dark:bg-[#141416] text-black dark:text-white">
@@ -28,27 +28,27 @@ const Dashboard = () => {
           <img className="cursor-pointer" src={Profilephoto} alt="" />
         </div>
       </div>
-
       <div className="px-[117px] p-10">
         <div className="flex justify-end">
           <Time />
         </div>
-        <div className="py-[147.5px]">
+
+        <div className="py-[]">
           <div className="flex justify-center gap-[35px] items-center">
-            {/* ACTIVE MEMBERS */}
-            <Active />
-            {/* WEEKLY TASK*/}
-            <Weekly />
-            {/* MINE BUTTON */}
-            <MineButton />
+            <div>
+              <Collector />
+              <div className="flex justify-center gap-[35px] items-center">
+                <Weekly />
+                <Weekly />
+                <MineButton />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <Nav1 />
-      </div>
+      <Nav1 />
     </div>
   );
 };
 
-export default Dashboard;
+export default Wallet;

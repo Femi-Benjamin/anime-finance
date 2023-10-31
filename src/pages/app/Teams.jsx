@@ -1,16 +1,23 @@
 import { useTheme } from "../../context/ThemeContext";
+import { Link } from "react-router-dom";
 import Profilephoto from "../../assets/images/profilephoto.svg";
 import animelogo from "../../assets/images/anime-logo.svg";
 import Group from "../../assets/images/group.svg";
 import Time from "../../components/Time";
 import Nav1 from "../../components/Nav1";
+import Name from "../../components/Name";
+import Weekly from "../../components/Weekly";
+import MineButton from "../../components/MineButton";
+
 
 const Teams = () => {
     const { isDarkMode, toggleTheme } = useTheme();
     return (
-        <div className="bg-[#FAFAFA] dark:bg-[#141416] text-black dark:text-white h-screen">
+        <div className="bg-[#FAFAFA] dark:bg-[#141416] text-black dark:text-white">
             <div className="flex justify-between p-5 border-b">
-                <img src={animelogo} alt="" />
+                <Link to="/">
+                    <img src={animelogo} alt="" />
+                </Link>
                 <div className="flex gap-7">
                     <button
                         className="text-black dark:text-white text-sm px-2.5 py-2.5 md:rounded rounded-3xl bg-[#EBEBEBEE] focus:outline-none"
@@ -26,7 +33,20 @@ const Teams = () => {
                 <div className="flex justify-end">
                     <Time />
                 </div>
-                <h1>Teams</h1>
+
+
+                <div className="py-[]">
+                    <div className="flex justify-center gap-[35px] items-center">
+                        <div>
+                            <Name />
+                            <div className="flex justify-center gap-[35px] items-center">
+                                <Weekly />
+                                <Weekly />
+                                <MineButton />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <Nav1 />
         </div>

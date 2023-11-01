@@ -49,7 +49,7 @@ function Navbar() {
 
           <div className="md:block hidden">
             <Link
-              to="chooseUs"
+              to="chooseus"
               spy={true}
               smooth={true}
               offset={-100}

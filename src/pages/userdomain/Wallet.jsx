@@ -1,8 +1,8 @@
 import { useTheme } from "../../context/ThemeContext";
 import { Link } from "react-router-dom";
-import Profilephoto from "../../assets/images/profilephoto.svg";
-import animelogo from "../../assets/images/anime-logo.svg";
-import Group from "../../assets/images/group.svg";
+import Profilephoto from "../../assets/images/Profilephoto.svg";
+import animelogo from "../../assets/images/animelogo.svg";
+import Group from "../../assets/images/Group.svg";
 import Time from "../../components/Time";
 import Nav1 from "../../components/Nav1";
 import { Collector } from "../../components/Collector";
@@ -12,7 +12,7 @@ import MineButton from "../../components/MineButton";
 const Wallet = () => {
   const { isDarkMode, toggleTheme } = useTheme();
   return (
-    <div className="bg-[#FAFAFA] dark:bg-[#141416] text-black dark:text-white">
+    <div className="bg-[#FAFAFA] dark:bg-[#a0a0c2] text-black dark:text-white">
       <div className="flex justify-between p-5 border-b">
         <Link to="/">
           <img src={animelogo} alt="" />

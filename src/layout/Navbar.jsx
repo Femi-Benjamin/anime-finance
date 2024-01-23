@@ -2,7 +2,7 @@ import { CustomButton } from "../components/button";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
 import { Link } from "react-scroll";
-import logo from "../assets/images/anime-logo.svg";
+import logo from "../assets/images/animelogo.svg";
 import Menu from "../assets/images/Menu.svg";
 import "./Navbar.css";
 

@@ -2,7 +2,7 @@ import { useTheme } from "../../context/ThemeContext";
 import { Link } from "react-router-dom";
 import Profilephoto from "../../assets/images/Profilephoto.svg";
 import animelogo from "../../assets/images/animelogo.svg";
-import Group from "../../assets/images/group.svg";
+import Group from "../../assets/images/Group.svg";
 import Time from "../../components/Time";
 import Nav1 from "../../components/Nav1";
 import Name from "../../components/Name";

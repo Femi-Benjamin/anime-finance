@@ -1,13 +1,12 @@
 import { useTheme } from "../../context/ThemeContext";
 import { Link } from "react-router-dom";
-import Profilephoto from "../../assets/images/profilephoto.svg";
-import animelogo from "../../assets/images/anime-logo.svg";
-import Group from "../../assets/images/group.svg";
+import Profilephoto from "../../assets/images/Profilephoto.svg";
+import animelogo from "../../assets/images/animelogo.svg";
+import Group from "../../assets/images/Group.svg";
 import Time from "../../components/Time";
 import Nav1 from "../../components/Nav1";
 import Info from "../../components/Info";
 import Tasks from "../../components/Tasks";
-
 
 
 const Announcement = () => {

@@ -1,6 +1,6 @@
 import { useTheme } from "../../context/ThemeContext";
 import { Link } from "react-router-dom";
-import Profilephoto from "../../assets/images/profilephoto.svg";
+import Profilephoto from "../../assets/images/Profilephoto.svg";
 import animelogo from "../../assets/images/anime-logo.svg";
 import Group from "../../assets/images/group.svg";
 import Time from "../../components/Time";

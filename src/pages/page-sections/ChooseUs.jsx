@@ -1,4 +1,4 @@
-import BenefitsCard from "../../components/benefitsCard";
+import BenefitsCard from "../../components/BenefitsCard";
 
 const ChooseUs = () => {
   return (

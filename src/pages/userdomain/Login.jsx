@@ -1,5 +1,5 @@
 import { useTheme } from "../../context/ThemeContext";
-import animelogo from "../../assets/images/anime-logo.svg";
+import animelogo from "../../assets/images/animelogo.svg";
 import { CustomButton } from "../../components/button";
 import Eyeicon from "../../assets/images/Eyeicon.svg";
 import { useState } from "react";

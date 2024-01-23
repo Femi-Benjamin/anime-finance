@@ -1,4 +1,4 @@
-import Profilephoto from "../assets/images/profilephoto.svg";
+import Profilephoto from "../assets/images/Profilephoto.svg";
 
 const Active = () => {
   return (

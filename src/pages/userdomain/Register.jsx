@@ -1,6 +1,6 @@
 import { CustomButton } from "../../components/button";
 import { useTheme } from "../../context/ThemeContext";
-import animelogo from "../../assets/images/anime-logo.svg";
+import animelogo from "../../assets/images/animelogo.svg";
 import { Link } from "react-router-dom";
 
 const Register = () => {
